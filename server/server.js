@@ -44,8 +44,9 @@ await connectDB();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    process.env.CLIENT_URL
+    "https://carrental-ten-orcin.vercel.app"
   ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 
